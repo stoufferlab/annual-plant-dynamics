@@ -7,8 +7,6 @@
 # 1. model parameters
 # 2. a set of initial conditions for all state variables
 fecundity.model.predict = function(params, plants.i, plants.j, seeds.i, seeds.j, time, focal, verbose=FALSE){
-	# to use/run the 2sp model
-	source('model.2sp.R')
 
 	# set the parameters in the ode solver
 	fecundity_dynamics_set_params(

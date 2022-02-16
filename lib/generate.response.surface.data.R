@@ -37,9 +37,6 @@ params <- list(
 # simulate the outcomes the response-surface experiment
 ########################################################
 
-# to use/run the 2sp model
-source('model.2sp.R')
-
 # set the parameters for the model
 fecundity_dynamics_set_params(
 	gamma_i = params$gamma[1],
