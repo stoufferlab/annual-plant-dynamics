@@ -3,6 +3,10 @@
 library(odeintr)
 
 # define the ode in C++ format to use odeintr
+# define the ode in C++ format to use odeintr
+# x[0] = seeds in seed bank species i
+# x[1] = plants species i
+# x[2] = biomass species i
 fecundity.dynamics.sys = '
 	// seeds in the seed bank
 	dxdt[0] = -gamma * x[0] - mu * x[0];
@@ -17,5 +21,12 @@ fecundity.dynamics.sys = '
 odeintr::compile_sys(
 	"fecundity_dynamics",
 	fecundity.dynamics.sys,
-	pars = c("gamma", "mu", "nu", "r", "K", "beta")
+	pars = c(
+		"gamma",
+		"mu",
+		"nu",
+		"r",
+		"K",
+		"beta"
+	)
 )

@@ -7,6 +7,12 @@
 library(odeintr)
 
 # define the ode in C++ format to use odeintr
+# x[0] = seeds in seed bank species i
+# x[1] = plants species i
+# x[2] = biomass species i
+# x[3] = seeds in seed bank species j
+# x[4] = plants species j
+# x[5] = biomass species j
 fecundity.dynamics.sys = '
 	// seeds in the seed bank species i
 	dxdt[0] = -gamma_i * x[0] - mu_i * x[0];
