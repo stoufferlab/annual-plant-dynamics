@@ -1,8 +1,6 @@
 # Annual-Plant Population Dynamics
 
-This repository contains code to support the unpublished study *A critical examination of models of annual-plant population dynamics and density-dependent fecundity*.
-
-Please email Daniel Stouffer (daniel.stouffer@canterbury.ac.nz)with any questions.
+This repository contains code to support the unpublished study *A critical examination of models of annual-plant population dynamics and density-dependent fecundity* by Daniel B. Stouffer (daniel.stouffer@canterbury.ac.nz).
 
 ## Organization
 The repository provides two example scripts (`simulate.two.species.model.R` and `fit.response.surface.data.R`) and additional scripts in [lib](lib/) which provide utility functions used therein.
